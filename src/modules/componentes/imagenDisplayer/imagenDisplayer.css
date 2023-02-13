@@ -1,0 +1,27 @@
+@media (max-width: 480px){
+    .imagen_container{
+        width: 150px;
+        height: 150px;
+    } 
+
+}
+
+@media (min-width: 480px){
+    .imagen_container{
+        width: 500px;
+        height: 500px;
+    } 
+}
+
+
+
+
+
+.imagen_container{
+    background-color: azure;
+    background-image: url("../../../assets/utils/portada.jpeg");
+    border-radius: 57%;
+    background-size: cover;
+    background-position: 30%;
+    box-shadow: rgba(150, 148, 144, 0.269) 0px 5px 15px;
+}

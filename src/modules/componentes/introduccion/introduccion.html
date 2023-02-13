@@ -1,0 +1,16 @@
+<template>
+    <div class="introduccion_container">
+        <div class="imagen_container">
+            <componentes-imagen-displayer></componentes-imagen-displayer>
+        </div>
+        <div class="info_container"> 
+            <componentes-titulo class="info_titulo"></componentes-titulo>
+            <div class="button-Container">
+                <componentes-boton onbuttonclick={handleClick} type = "standard" class="boton_titulo"> Ver CV online </componentes-boton>
+                <a href="../../../assets/utils/CV.pdf" download="Jesús Costa CV.pdf">
+                    <componentes-boton onbuttonclick={handleClick} type= "negative border" class="boton_titulo"> Descargar CV en pdf </componentes-boton>
+                </a>
+            </div>
+        </div>
+    </div>
+</template>
