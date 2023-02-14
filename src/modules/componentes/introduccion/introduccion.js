@@ -1,8 +1,35 @@
 import { track, LightningElement} from "lwc";
-
+import { gsap } from "gsap";
 export default class introduccion extends LightningElement{
+    
     handleClick(event){
-        const buttonclick = new CustomEvent('buttonclick');
-        this.dispatchEvent(buttonclick, {bubbles:true, composed: true, detail: 'click'});
+        this.introduccionOut()
+        .then( data => {
+            if(data == 'Success'){
+                const buttonclick = new CustomEvent('buttonclick');
+                this.dispatchEvent(buttonclick, {bubbles:true, composed: true});
+            };
+        });
+    }
+
+    introduccionOut(){
+            const isDone = new Promise((resolve, reject) => {
+            const screenHeigth= window.innerHeight;
+            const blueScreen = this.template.querySelector('.introduccion_container');
+            const imagen = this.template.querySelector('.imagen');
+            const info = this.template.querySelector('.info_container');
+            const tl = gsap.timeline();
+            const imagenOut = gsap.to(imagen, {duration: 3, opacity: 0}, 0);
+            const infoOut = gsap.to(info, {duration: 3, opacity: 0});
+            const blueScreenOut = gsap.to(blueScreen, {duration: 2, marginTop: `${-screenHeigth}px`, onComplete: 
+                () => {
+                    resolve('Success');
+                }
+            });
+            tl.add([infoOut,imagenOut]);
+            tl.add(blueScreenOut, ">"); 
+        });
+        
+        return isDone;
     }
 }

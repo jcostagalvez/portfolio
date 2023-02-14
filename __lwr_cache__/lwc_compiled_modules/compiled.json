@@ -1,0 +1,234 @@
+[
+  [
+    "componentes/app@0.0.1",
+    {
+      "ownHash": "9aa98dff11b37613055f63101d825b39",
+      "module": "./cache/componentes_app_0_0_1.js",
+      "moduleMeta": "./cache/componentes_app_0_0_1.meta.json"
+    }
+  ],
+  [
+    "lwr/esmLoader@0.7.3",
+    {
+      "ownHash": "81a48ed6a08225f2591acd34624d1b85",
+      "module": "./cache/lwr_esmLoader_0_7_3.js",
+      "moduleMeta": "./cache/lwr_esmLoader_0_7_3.meta.json"
+    }
+  ],
+  [
+    "lwr/preInit@0.7.3",
+    {
+      "ownHash": "4abc90ae314e383e4c23f4dc607d9643",
+      "module": "./cache/lwr_preInit_0_7_3.js",
+      "moduleMeta": "./cache/lwr_preInit_0_7_3.meta.json"
+    }
+  ],
+  [
+    "@lwc/synthetic-shadow@2.17.0",
+    {
+      "ownHash": "c4cac82d80eb0bcda742d77cd15ce7f1",
+      "module": "./cache/_lwc_synthetic-shadow_2_17_0.js",
+      "moduleMeta": "./cache/_lwc_synthetic-shadow_2_17_0.meta.json"
+    }
+  ],
+  [
+    "lwr/hmr@0.7.3",
+    {
+      "ownHash": "b6c05a5d79ea66f651b367c2a6190189",
+      "module": "./cache/lwr_hmr_0_7_3.js",
+      "moduleMeta": "./cache/lwr_hmr_0_7_3.meta.json"
+    }
+  ],
+  [
+    "lwr/init@0.7.3",
+    {
+      "ownHash": "6258bcb20cc2d5d6a9f3c5a6f9d0acaf",
+      "module": "./cache/lwr_init_0_7_3.js",
+      "moduleMeta": "./cache/lwr_init_0_7_3.meta.json"
+    }
+  ],
+  [
+    "lwr/metrics@0.7.3",
+    {
+      "ownHash": "dfbc827104d50ff7d16b59c9d0e06aca",
+      "module": "./cache/lwr_metrics_0_7_3.js",
+      "moduleMeta": "./cache/lwr_metrics_0_7_3.meta.json"
+    }
+  ],
+  [
+    "lwr/profiler@0.7.3",
+    {
+      "ownHash": "5a10236d8c52bc9f6dee22875cd7016d",
+      "module": "./cache/lwr_profiler_0_7_3.js",
+      "moduleMeta": "./cache/lwr_profiler_0_7_3.meta.json"
+    }
+  ],
+  [
+    "lwc@2.17.0",
+    {
+      "ownHash": "60dae7a83431c35c02c87ca8aaaa6044",
+      "module": "./cache/lwc_2_17_0.js",
+      "moduleMeta": "./cache/lwc_2_17_0.meta.json"
+    }
+  ],
+  [
+    "lwr/hmr#util/swap@0.7.3",
+    {
+      "ownHash": "b90e85947b9514fa4d53fbced946e451",
+      "module": "./cache/lwr_hmr_util_swap_0_7_3.js",
+      "moduleMeta": "./cache/lwr_hmr_util_swap_0_7_3.meta.json"
+    }
+  ],
+  [
+    "componentes/app#app.html@0.0.1",
+    {
+      "ownHash": "b7ae8d36a6a5498d4fcead33a3801db3",
+      "module": "./cache/componentes_app_app_html_0_0_1.js",
+      "moduleMeta": "./cache/componentes_app_app_html_0_0_1.meta.json"
+    }
+  ],
+  [
+    "componentes/app#app.css@0.0.1",
+    {
+      "ownHash": "09f7e25e99322936c1deee155b8d57f6",
+      "module": "./cache/componentes_app_app_css_0_0_1.js",
+      "moduleMeta": "./cache/componentes_app_app_css_0_0_1.meta.json"
+    }
+  ],
+  [
+    "componentes/app#app.scoped.css?scoped=true@0.0.1",
+    {
+      "ownHash": "13fcec3d73f055fccd306149598cb9b5",
+      "module": "./cache/componentes_app_app_scoped_css_scoped=true_0_0_1.js",
+      "moduleMeta": "./cache/componentes_app_app_scoped_css_scoped=true_0_0_1.meta.json"
+    }
+  ],
+  [
+    "componentes/introduccion@0.0.1",
+    {
+      "ownHash": "a13291e03283c0846cfcd9ac6bb36110",
+      "module": "./cache/componentes_introduccion_0_0_1.js",
+      "moduleMeta": "./cache/componentes_introduccion_0_0_1.meta.json"
+    }
+  ],
+  [
+    "componentes/introduccion#introduccion.html@0.0.1",
+    {
+      "ownHash": "ff832faa2a3c140bd497f48b1857b44f",
+      "module": "./cache/componentes_introduccion_introduccion_html_0_0_1.js",
+      "moduleMeta": "./cache/componentes_introduccion_introduccion_html_0_0_1.meta.json"
+    }
+  ],
+  [
+    "componentes/introduccion#introduccion.css@0.0.1",
+    {
+      "ownHash": "ca81d56a15eb7ca8597511ce4ebfd15e",
+      "module": "./cache/componentes_introduccion_introduccion_css_0_0_1.js",
+      "moduleMeta": "./cache/componentes_introduccion_introduccion_css_0_0_1.meta.json"
+    }
+  ],
+  [
+    "componentes/introduccion#introduccion.scoped.css?scoped=true@0.0.1",
+    {
+      "ownHash": "13fcec3d73f055fccd306149598cb9b5",
+      "module": "./cache/componentes_introduccion_introduccion_scoped_css_scoped=true_0_0_1.js",
+      "moduleMeta": "./cache/componentes_introduccion_introduccion_scoped_css_scoped=true_0_0_1.meta.json"
+    }
+  ],
+  [
+    "componentes/imagenDisplayer@0.0.1",
+    {
+      "ownHash": "3d80bc8bf05203911edfcecb16f7ffec",
+      "module": "./cache/componentes_imagenDisplayer_0_0_1.js",
+      "moduleMeta": "./cache/componentes_imagenDisplayer_0_0_1.meta.json"
+    }
+  ],
+  [
+    "componentes/titulo@0.0.1",
+    {
+      "ownHash": "2dab6369c2a05cd1edad82c3050dd5b3",
+      "module": "./cache/componentes_titulo_0_0_1.js",
+      "moduleMeta": "./cache/componentes_titulo_0_0_1.meta.json"
+    }
+  ],
+  [
+    "componentes/boton@0.0.1",
+    {
+      "ownHash": "12e570c4136a7530e5bebdbc490a004b",
+      "module": "./cache/componentes_boton_0_0_1.js",
+      "moduleMeta": "./cache/componentes_boton_0_0_1.meta.json"
+    }
+  ],
+  [
+    "componentes/titulo#titulo.html@0.0.1",
+    {
+      "ownHash": "38eb547309eb53086b9dcc5e68a12482",
+      "module": "./cache/componentes_titulo_titulo_html_0_0_1.js",
+      "moduleMeta": "./cache/componentes_titulo_titulo_html_0_0_1.meta.json"
+    }
+  ],
+  [
+    "componentes/imagenDisplayer#imagenDisplayer.html@0.0.1",
+    {
+      "ownHash": "705a56bdf06f3a2d7622bfdbe9234040",
+      "module": "./cache/componentes_imagenDisplayer_imagenDisplayer_html_0_0_1.js",
+      "moduleMeta": "./cache/componentes_imagenDisplayer_imagenDisplayer_html_0_0_1.meta.json"
+    }
+  ],
+  [
+    "componentes/boton#boton.html@0.0.1",
+    {
+      "ownHash": "3703d695d83477312a1acd33a6fd96bb",
+      "module": "./cache/componentes_boton_boton_html_0_0_1.js",
+      "moduleMeta": "./cache/componentes_boton_boton_html_0_0_1.meta.json"
+    }
+  ],
+  [
+    "componentes/titulo#titulo.css@0.0.1",
+    {
+      "ownHash": "98aa1ba528fb7c1659556e5c070803f2",
+      "module": "./cache/componentes_titulo_titulo_css_0_0_1.js",
+      "moduleMeta": "./cache/componentes_titulo_titulo_css_0_0_1.meta.json"
+    }
+  ],
+  [
+    "componentes/titulo#titulo.scoped.css?scoped=true@0.0.1",
+    {
+      "ownHash": "13fcec3d73f055fccd306149598cb9b5",
+      "module": "./cache/componentes_titulo_titulo_scoped_css_scoped=true_0_0_1.js",
+      "moduleMeta": "./cache/componentes_titulo_titulo_scoped_css_scoped=true_0_0_1.meta.json"
+    }
+  ],
+  [
+    "componentes/imagenDisplayer#imagenDisplayer.css@0.0.1",
+    {
+      "ownHash": "356f37be41b2fd92d66a633f113ebe0d",
+      "module": "./cache/componentes_imagenDisplayer_imagenDisplayer_css_0_0_1.js",
+      "moduleMeta": "./cache/componentes_imagenDisplayer_imagenDisplayer_css_0_0_1.meta.json"
+    }
+  ],
+  [
+    "componentes/imagenDisplayer#imagenDisplayer.scoped.css?scoped=true@0.0.1",
+    {
+      "ownHash": "13fcec3d73f055fccd306149598cb9b5",
+      "module": "./cache/componentes_imagenDisplayer_imagenDisplayer_scoped_css_scoped=true_0_0_1.js",
+      "moduleMeta": "./cache/componentes_imagenDisplayer_imagenDisplayer_scoped_css_scoped=true_0_0_1.meta.json"
+    }
+  ],
+  [
+    "componentes/boton#boton.css@0.0.1",
+    {
+      "ownHash": "46b63bd3607ef6a76a79d179dcd7d836",
+      "module": "./cache/componentes_boton_boton_css_0_0_1.js",
+      "moduleMeta": "./cache/componentes_boton_boton_css_0_0_1.meta.json"
+    }
+  ],
+  [
+    "componentes/boton#boton.scoped.css?scoped=true@0.0.1",
+    {
+      "ownHash": "13fcec3d73f055fccd306149598cb9b5",
+      "module": "./cache/componentes_boton_boton_scoped_css_scoped=true_0_0_1.js",
+      "moduleMeta": "./cache/componentes_boton_boton_scoped_css_scoped=true_0_0_1.meta.json"
+    }
+  ]
+]

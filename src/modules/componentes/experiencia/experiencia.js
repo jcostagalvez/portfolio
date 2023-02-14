@@ -4,6 +4,6 @@ export default class experiencia extends LightningElement{
 
     handleClick(event){
         const mainContainer = this.template.querySelector('.introduccion');
-        console.log(mainContainer)
+        console.log('hola')
     }
 }

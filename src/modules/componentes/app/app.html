@@ -1,5 +1,10 @@
 <template>
         <main>
-                <componentes-introduccion></componentes-introduccion>
+                <tempalte if:true={introduction}>
+                        <componentes-introduccion onbuttonclick={handleClick}></componentes-introduccion>
+                </tempalte>
+                <tempalte if:true={portfolio}>
+                        <componentes-introduccion onbuttonclick={handleClick}></componentes-introduccion>
+                </tempalte>
         </main>
 </template>
