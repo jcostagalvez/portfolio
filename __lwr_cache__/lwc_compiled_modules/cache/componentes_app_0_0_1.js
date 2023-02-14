@@ -4,7 +4,7 @@ class app extends LightningElement {
   constructor(...args) {
     super(...args);
     this.introduction = true;
-    this.portfolio = true;
+    this.portfolio = false;
   }
   handleClick(event) {
     this.introduction = false;
