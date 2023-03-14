@@ -1,0 +1,13 @@
+<template>
+    <div class="tab-container">
+        <template for:each={tabs} for:item="tab"> 
+            <div id={tab}
+            class ="tab_container"
+            tabindex="0"
+            onclick={handleClick}
+            key={tab}>
+                {tab}
+            </div>
+        </template>
+    </div>
+</template>

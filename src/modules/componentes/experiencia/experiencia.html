@@ -1,6 +1,17 @@
 <template>
-    esto es la app
-    <div class="app_container">
-        <componentes-introduccion class="introduccion" onbuttonclick={handleClick}></componentes-introduccion>
+    <div class="experiencia-container">
+            <div class="card-pagination-back">
+                <template if:true={showBack}>
+                    <componentes-flecha-paginacion onclick={handlerBack}></componentes-flecha-paginacion>
+                </template>
+            </div>
+        <div class="cards-container">
+                <componentes-carousel tarjetas-info={proyectos}></componentes-carousel>
+        </div>
+        <div class="card-pagination-front"> 
+            <template if:true={showNext}>
+                <componentes-flecha-paginacion onclick={handlerNext}></componentes-flecha-paginacion>
+            </template>
+        </div>
     </div>
 </template>

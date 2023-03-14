@@ -16,7 +16,8 @@
     "gsap": "^3.11.4",
     "lightning-base-components": "^1.15.4-alpha",
     "lwc": "2.17.0",
-    "lwr": "0.7.3"
+    "lwr": "0.7.3",
+    "sass": "^1.58.3"
   },
   "engines": {
     "node": ">=14.15.4 <19"

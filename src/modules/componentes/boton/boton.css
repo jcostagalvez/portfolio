@@ -39,7 +39,7 @@ button:hover {
 .negative:hover{
     background-color: #dd7a01;
 }
-button:active{
+button:focus{
     background-color: #d2750a;
     box-shadow: #dd7a01 0 1px 30px;
 }

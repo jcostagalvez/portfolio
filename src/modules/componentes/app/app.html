@@ -4,7 +4,13 @@
                         <componentes-introduccion onbuttonclick={handleClick}></componentes-introduccion>
                 </tempalte>
                 <tempalte if:true={portfolio}>
-                        <componentes-introduccion onbuttonclick={handleClick}></componentes-introduccion>
+                        <componentes-navigation-bar onnavselected={handleNavSelected} tabs={navigationElements}></componentes-navigation-bar>
+                        <tempalte if:true={navigationItems.Experiencia.visible}>
+                                <componentes-experiencia></componentes-experiencia>
+                        </tempalte>
+                        <tempalte if:true={navigationItems.Formación.visible}>
+                                <componentes-formacion></componentes-formacion>
+                        </tempalte>
                 </tempalte>
         </main>
 </template>

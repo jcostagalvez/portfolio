@@ -1,0 +1,9 @@
+<template>
+    <div class="scene">
+            <template class="carousel" for:each = {tarjetasInfo} for:item="info">
+                <template if:true={info.isVisible}>
+                    <componentes-tarjeta-experiencia class="carousel__cell" key={info.id} info={info}> </componentes-tarjeta-experiencia>
+                </template>
+            </template>
+    </div>
+</template>
