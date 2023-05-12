@@ -1,0 +1,17 @@
+.habilidades_Container{
+    width: 100%;
+    display: flex;
+    margin-top: 4%;
+    justify-content: space-around;
+}
+
+.componentePopUp{
+    opacity: 0.8;
+}
+
+.habilidad_img {
+    width:  200px;
+    height: 200px;
+    object-fit: contain;
+    cursor: pointer;
+}

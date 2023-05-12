@@ -1,8 +1,8 @@
 <template>
         <lightning-card>
             <div class="title_container">
-                <img class="title-logo" src={info.img} alt=""/>
-                <p class="title_text"> {info.name}  <span> ({info.año_inicio} - {info.año_final}) </span></p>
+                <img class="title-logo" src={info.logo} alt=""/>
+                <p class="title_text"> {info.titulo}  <span> ({info.inicio_fecha} - {info.final_fecha}) </span></p>
             </div>
     
             <div class="body-container">
@@ -12,8 +12,8 @@
             </div>
     
             <div class="footer-container">
-                <template class="footer-badge-container" for:each={info.habilidades} for:item="habilidad">
-                    <lightning-badge class="footer-badges" label={habilidad.Name} key={habilidad.id}></lightning-badge>
+                <template class="footer-badge-container" for:each={info.lenguajes} for:item="habilidad">
+                    <lightning-badge class="footer-badges" label={habilidad} key={habilidad}></lightning-badge>
                 </template>
             </div>
         </lightning-card>

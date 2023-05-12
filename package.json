@@ -13,10 +13,13 @@
   },
   "dependencies": {
     "@salesforce-ux/design-system": "^2.20.1",
+    "axios": "^1.4.0",
     "gsap": "^3.11.4",
+    "jsforce": "^1.11.1",
     "lightning-base-components": "^1.15.4-alpha",
     "lwc": "2.17.0",
     "lwr": "0.7.3",
+    "request": "^2.88.2",
     "sass": "^1.58.3"
   },
   "engines": {

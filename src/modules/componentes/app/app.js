@@ -6,11 +6,18 @@ export default class app extends LightningElement{
     @track navigationItems = navigationItems;
      pastTab = '';
     actualTab = '';
-    @track introduction = false;
-    @track portfolio = true;
+    @track introduction = true;
+    @track portfolio = false;
 
+    connectedCallback(){
+        fetch('/api/login')
+        .then((res) => {
+            console.log('conectado');
+        })
+    }
     handleClick(event){
         this.introduction = false;
+        this.portfolio = true;
         console.log(this.introduction);
     }
 

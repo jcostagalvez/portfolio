@@ -8,11 +8,17 @@ class app extends LightningElement {
     this.navigationItems = navigationItems;
     this.pastTab = '';
     this.actualTab = '';
-    this.introduction = false;
-    this.portfolio = true;
+    this.introduction = true;
+    this.portfolio = false;
+  }
+  connectedCallback() {
+    fetch('/api/login').then(res => {
+      console.log('conectado');
+    });
   }
   handleClick(event) {
     this.introduction = false;
+    this.portfolio = true;
     console.log(this.introduction);
   }
   handleNavSelected(event) {

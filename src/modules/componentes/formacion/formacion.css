@@ -1,0 +1,10 @@
+.container_accordion{
+    width: 100%;
+    display: flex;
+    margin-top: 2%;
+    justify-content: center;
+}
+
+lightning-card {
+    margin: 2%;
+}
