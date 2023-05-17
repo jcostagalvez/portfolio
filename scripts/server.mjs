@@ -1,17 +1,19 @@
 import { createServer } from "lwr";
 import jsforce from 'jsforce';
 import axios from 'axios';
-import request from 'request';
+import dotenv from 'dotenv';
+dotenv.config();
 
     const lwrServer = createServer({serverType: "express"});
     const app = lwrServer.getInternalServer();
     let token = '';
-    const conexion = {
-        loginUrl: 'https://myself264-dev-ed.develop.my.salesforce.com',
-        clientId: '3MVG9SOw8KERNN0_5Oh6DhCDkJbnS8pvP.MMkjns6Hmdqd.WRusXQylogzrSaWdeFoNRGg0yNiDK8anrCZo77',
-        clientSecret: '7E4804339B35094FB9F2ACC80DEA028CD259D14EA80988DDF1440119671D27EE',
-        redirectUri:'https://www.google.com',
-    }
+        const conexion = {
+            loginUrl: process.env.URL,
+            clientId: process.env.CLIENT_ID,
+            clientSecret: process.env.CLIENT_SECRET,
+            redirectUri: process.env.REDIRECT
+        }
+
 // EndPoint para loguearme
     app.get('/api/login', function (req, res) {
         var conn = new jsforce.Connection({
@@ -29,7 +31,7 @@ import request from 'request';
 // Endpoint para la llamada al serivicio rest
     app.get('/api/experiencia/:nombre', function (req, res) {
 
-        axios.get('https://myself264-dev-ed.develop.my.salesforce.com/services/apexrest/api/Experiencias/',
+        axios.get(process.env.URL + '/services/apexrest/api/Experiencias/',
         {
             params: {
                 nombre: req.params.nombre  
@@ -42,12 +44,25 @@ import request from 'request';
             res.send(JSON.parse(success.data));
         }
 
-        ).catch(( error) => 
-            console.log(error.data)
-        )
+        ).catch(( error) => console.log(error.data))
     });
 
 // Endpoint para la llamada de los estudios
+    app.get('/api/formacion/:nombre', function (req, res) {
+        axios.get(process.env.URL + '/services/apexrest/api/Formacion/',
+        {
+            params: {
+                nombre: req.params.nombre
+            },
+            headers:{
+                'Authorization': 'Bearer ' + token
+            }
+        })
+        .then((success) => {
+            res.send(JSON.parse(success.data));
+        })
+        .catch((error) => console.log(error.data))
+    })
 
 // Endpoint para la llamada de los lenguajes
 

@@ -64,7 +64,7 @@ function tmpl($api, $cmp, $slotset, $ctx) {
       "alt": ""
     },
     key: 2
-  }), api_element("p", stc3, [api_text(" " + api_dynamic_text($cmp.info.titulo) + "  "), api_element("span", stc4, [api_text(" (" + api_dynamic_text($cmp.info.inicio_fecha) + " - " + api_dynamic_text($cmp.info.final_fecha) + ") ")])])]), api_element("div", stc5, [api_element("div", stc6, [api_element("span", stc7, [api_text(" " + api_dynamic_text($cmp.info.titulo) + " ")])])]), api_element("div", stc8, api_iterator($cmp.info.lenguajes, function (habilidad) {
+  }), api_element("p", stc3, [api_text(" " + api_dynamic_text($cmp.info.name) + "  "), api_element("span", stc4, [api_text(" (" + api_dynamic_text($cmp.info.inicio_fecha) + " - " + api_dynamic_text($cmp.info.final_fecha) + ") ")])])]), api_element("div", stc5, [api_element("div", stc6, [api_element("span", stc7, [api_text(" " + api_dynamic_text($cmp.info.titulo) + " ")])])]), api_element("div", stc8, api_iterator($cmp.info.lenguajes, function (habilidad) {
     return api_custom_element("lightning-badge", _lightningBadge, {
       classMap: stc9,
       props: {

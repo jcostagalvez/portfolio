@@ -2,33 +2,26 @@
     <div class="container_accordion">
         <lightning-accordion >
             <div class="section_container">
+                
                 <lightning-accordion-section class="section" name="Formacion_curricular" label="Formación Curricular"> 
-                    
-                    <lightning-card  title="Grado en psicologia">
-                        <p class="slds-p-horizontal_small">Universidad de Oviedo (2010 - 2015)</p>
-                    </lightning-card>
-
-                    <lightning-card  title="Master en psicologia general sanitaria">
-                        <p class="slds-p-horizontal_small">Universidad Catolica de San Antonio  (2017 - 2019)</p>
-                    </lightning-card>
-
-                    <lightning-card  title="Especialista en terapia infantil y juvenil">
-                        <p class="slds-p-horizontal_small">Universidad Autonoma de Madrid (2022 - 2023)</p>
-                    </lightning-card>
+                    <template for:each = {lstCurricular} for:item="info">
+                        <lightning-card  title={info.titulo} key={info.id}>
+                            <p class="slds-p-horizontal_small">{info.universidad} {info.final_fecha}</p>
+                        </lightning-card>
+                    </template>
 
                 </lightning-accordion-section>
             </div>
-            <lightning-accordion-section name="Formacion_uncurricular" label="Formacion Extracurricular"> 
-                
-                <lightning-card  title="Administrador de Salesforce">
-                    <p class="slds-p-horizontal_small">ASIME 4.0 (2017 - 2018)</p>
-                </lightning-card>
-
-                <lightning-card  title="Introducción al Big data y Bussines Analitycs">
-                    <p class="slds-p-horizontal_small">Hazrtea (2023)</p>
-                </lightning-card>
-
-            </lightning-accordion-section>
+            <div class="section_container">
+                <lightning-accordion-section name="Formacion_uncurricular" label="Formacion Extracurricular"> 
+                    
+                    <template for:each = {lstNoCurricular} for:item="info">
+                        <lightning-card  title={info.titulo} key={info.id}>
+                            <p class="slds-p-horizontal_small">{info.universidad} {info.final_fecha}</p>
+                        </lightning-card>
+                    </template>
+                </lightning-accordion-section>
+            </div>
         </lightning-accordion>  
     </div>
 </template>

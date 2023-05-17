@@ -1,5 +1,4 @@
 import { LightningElement, track} from "lwc";
-import gsap from "gsap";
 export default class experiencia extends LightningElement{
     @track proyectos = [];
     @track showNext = true;

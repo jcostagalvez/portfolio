@@ -1,6 +1,5 @@
 import { registerDecorators as _registerDecorators, registerComponent as _registerComponent, LightningElement } from "lwc";
 import _tmpl from "./experiencia.html";
-import gsap from "gsap";
 class experiencia extends LightningElement {
   constructor(...args) {
     super(...args);
