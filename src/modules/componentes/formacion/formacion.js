@@ -3,7 +3,7 @@ import { LightningElement, track} from "lwc";
 export default class formacion extends LightningElement{
         @track lstCurricular = [];
         @track lstNoCurricular = [];
-
+        @track curricular = true;
     connectedCallback(){
         fetch('/api/Formacion/Jesús Costa Gálvez')
         .then(response => response.json())
@@ -22,5 +22,13 @@ export default class formacion extends LightningElement{
             console.log(this.lstNoCurricular);
         })
         .catch(err => console.log(err));
+    }
+
+    handleClickSi(){
+        this.curricular = true;
+    }
+
+    handleClickNo(){
+        this.curricular = false;
     }
 }

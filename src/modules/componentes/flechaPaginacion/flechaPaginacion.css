@@ -5,8 +5,8 @@
     position: relative;
     width:40px;
     height:40px;
-    border-top: 12px solid orange;
-    border-left: 12px solid orange;
+    border-top: 12px solid #dd7a01;
+    border-left: 12px solid #dd7a01;
     transform: rotate(-45deg);
     border-top-left-radius: 5%;
     cursor: pointer;

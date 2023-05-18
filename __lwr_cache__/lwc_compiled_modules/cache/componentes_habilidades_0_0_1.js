@@ -5,16 +5,9 @@ class habilidades extends LightningElement {
     super(...args);
     this.popUp = false;
     this.habilidades = {
-      img: 'lo que sea',
-      title: 'BBDD relacionales y no relacionales',
-      body: 'Experiencia en Bases de Datos relacionales y no relacionales.'
+      name: 'CSS',
+      Puntuaje: 75
     };
-  }
-  handleModal() {
-    this.popUp = true;
-  }
-  handleCloseModalWindow() {
-    this.popUp = false;
   }
   /*LWC compiler v2.17.0*/
 }

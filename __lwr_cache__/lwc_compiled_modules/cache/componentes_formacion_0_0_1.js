@@ -5,6 +5,7 @@ class formacion extends LightningElement {
     super(...args);
     this.lstCurricular = [];
     this.lstNoCurricular = [];
+    this.curricular = true;
   }
   connectedCallback() {
     fetch('/api/Formacion/Jesús Costa Gálvez').then(response => response.json()).then(response => {
@@ -21,12 +22,19 @@ class formacion extends LightningElement {
       console.log(this.lstNoCurricular);
     }).catch(err => console.log(err));
   }
+  handleClickSi() {
+    this.curricular = true;
+  }
+  handleClickNo() {
+    this.curricular = false;
+  }
   /*LWC compiler v2.17.0*/
 }
 _registerDecorators(formacion, {
   track: {
     lstCurricular: 1,
-    lstNoCurricular: 1
+    lstNoCurricular: 1,
+    curricular: 1
   }
 });
 export default _registerComponent(formacion, {

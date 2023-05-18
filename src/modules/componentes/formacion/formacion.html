@@ -1,27 +1,24 @@
 <template>
     <div class="container_accordion">
-        <lightning-accordion >
-            <div class="section_container">
-                
-                <lightning-accordion-section class="section" name="Formacion_curricular" label="Formación Curricular"> 
-                    <template for:each = {lstCurricular} for:item="info">
-                        <lightning-card  title={info.titulo} key={info.id}>
-                            <p class="slds-p-horizontal_small">{info.universidad} {info.final_fecha}</p>
-                        </lightning-card>
-                    </template>
-
-                </lightning-accordion-section>
-            </div>
-            <div class="section_container">
-                <lightning-accordion-section name="Formacion_uncurricular" label="Formacion Extracurricular"> 
-                    
-                    <template for:each = {lstNoCurricular} for:item="info">
-                        <lightning-card  title={info.titulo} key={info.id}>
-                            <p class="slds-p-horizontal_small">{info.universidad} {info.final_fecha}</p>
-                        </lightning-card>
-                    </template>
-                </lightning-accordion-section>
-            </div>
-        </lightning-accordion>  
+        <div class="section_container">
+            <button onclick={handleClickSi} class="accordition_title"> Formacion Curricular </button> 
+            <template if:true={curricular}> 
+                <template for:each = {lstCurricular} for:item="info">
+                    <lightning-card  class="card_accordion" title={info.titulo} key={info.id}>
+                        <p class="slds-p-horizontal_small">{info.universidad} {info.final_fecha}</p>
+                    </lightning-card>
+                </template>
+            </template>
+        </div>
+        <div class="section_container">
+            <button onclick={handleClickNo} class="accordition_title"> Formacion Extracurricular </button> 
+            <template if:false={curricular}> 
+                <template for:each = {lstNoCurricular} for:item="info">
+                    <lightning-card  class="card_accordion" title={info.titulo} key={info.id}>
+                        <p class="slds-p-horizontal_small">{info.universidad} {info.final_fecha}</p>
+                    </lightning-card>
+                </template>
+            </template>
+        </div>
     </div>
 </template>
