@@ -29,14 +29,7 @@ class experiencia extends LightningElement {
         }
       });
     }).catch(error => console.log(error));
-
-    /*  console.log('success');
-        console.log(this.proyectos);
-        
-        
-    */
   }
-
   handlerNext() {
     let nextIndex;
     this.proyectos.forEach((element, index) => {

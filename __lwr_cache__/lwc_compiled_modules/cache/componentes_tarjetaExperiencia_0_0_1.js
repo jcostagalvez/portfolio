@@ -5,7 +5,6 @@ class tarjetaExperiencia extends LightningElement {
     super(...args);
     this.info = void 0;
   }
-  renderedCallback() {}
   /*LWC compiler v2.17.0*/
 }
 _registerDecorators(tarjetaExperiencia, {

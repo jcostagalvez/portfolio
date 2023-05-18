@@ -29,12 +29,6 @@ export default class experiencia extends LightningElement{
             })
         })
         .catch((error) =>  console.log(error));
-        
-        /*  console.log('success');
-            console.log(this.proyectos);
-            
-            
-        */
     }
 
     handlerNext(){
