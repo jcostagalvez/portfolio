@@ -9,8 +9,8 @@ export default class formacion extends LightningElement{
         .then(response => response.json())
         .then(response => {
             response.forEach(formacion => {
-                console.log(typeof (formacion.final_fecha));
-                //console.log(formacion.final_fecha.getUTCFullYear());
+                let date = new Date(formacion.final_fecha);
+                formacion.final_fecha = date.getUTCFullYear();
                 if( formacion.tipo = 'Formación Curricular'){
                     this.lstCurricular.push(formacion);
                 }else{

@@ -26,6 +26,9 @@ const stc2 = {
   key: 3
 };
 const stc3 = {
+  "card-carousel": true
+};
+const stc4 = {
   classMap: {
     "card-pagination-front": true
   },
@@ -40,11 +43,12 @@ function tmpl($api, $cmp, $slotset, $ctx) {
       "click": _m0 || ($ctx._m0 = api_bind($cmp.handlerBack))
     }
   }) : null]), api_element("div", stc2, [api_custom_element("componentes-carousel", _componentesCarousel, {
+    classMap: stc3,
     props: {
       "tarjetasInfo": $cmp.proyectos
     },
     key: 4
-  })]), api_element("div", stc3, [$cmp.showNext ? api_custom_element("componentes-flecha-paginacion", _componentesFlechaPaginacion, {
+  })]), api_element("div", stc4, [$cmp.showNext ? api_custom_element("componentes-flecha-paginacion", _componentesFlechaPaginacion, {
     key: 6,
     on: {
       "click": _m1 || ($ctx._m1 = api_bind($cmp.handlerNext))

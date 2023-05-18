@@ -1,20 +1,22 @@
 <template>
-        <lightning-card>
-            <div class="title_container">
-                <img class="title-logo" src={info.logo} alt=""/>
-                <p class="title_text"> {info.name}  <span> ({info.inicio_fecha} - {info.final_fecha}) </span></p>
-            </div>
-    
-            <div class="body-container">
-                    <div class="body-proyectos-container" >
-                        <span  class="body-proyectos"> {info.titulo} </span>    
-                    </div>
-            </div>
-    
-            <div class="footer-container">
-                <template class="footer-badge-container" for:each={info.lenguajes} for:item="habilidad">
-                    <lightning-badge class="footer-badges" label={habilidad} key={habilidad}></lightning-badge>
-                </template>
+        <lightning-card class="scene">
+            <div class="container-card">
+                <div class="title_container">
+                    <img class="title-logo" src={info.logo} alt=""/>
+                    <p class="title_text"> {info.name}  <span> ({info.inicio_fecha} - {info.final_fecha}) </span></p>
+                </div>
+        
+                <div class="body-container">
+                        <div class="body-proyectos-container" >
+                            <span  class="body-proyectos"> {info.titulo} </span>    
+                        </div> 
+                </div>
+        
+                <div class="footer-container">
+                    <template class="footer-badge-container" for:each={info.lenguajes} for:item="habilidad">
+                        <lightning-badge class="footer-badges" label={habilidad} key={habilidad}></lightning-badge>
+                    </template>
+                </div>
             </div>
         </lightning-card>
 </template>

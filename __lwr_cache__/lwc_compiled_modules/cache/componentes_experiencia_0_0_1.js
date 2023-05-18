@@ -14,7 +14,10 @@ class experiencia extends LightningElement {
       console.log(response);
       this.proyectos = response;
       this.proyectos.forEach((item, index) => {
-        console.log(index);
+        let fecha_Inicio = new Date(item.inicio_fecha);
+        let fecha_final = new Date(item.final_fecha);
+        item.inicio_fecha = `${fecha_Inicio.getMonth()} / ${fecha_Inicio.getFullYear()}`;
+        item.final_fecha = `${fecha_final.getMonth()} / ${fecha_final.getFullYear()}`;
         if (index === 0) {
           item.isVisible = true;
         } else {

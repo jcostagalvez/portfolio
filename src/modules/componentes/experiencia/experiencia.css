@@ -24,3 +24,7 @@
     align-items: center;
     justify-content: flex-end;
 }
+
+.card-carousel{
+    width: 90%;
+}
