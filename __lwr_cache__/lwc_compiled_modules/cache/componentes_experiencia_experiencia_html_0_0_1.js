@@ -36,24 +36,29 @@ const stc4 = {
 };
 function tmpl($api, $cmp, $slotset, $ctx) {
   const {b: api_bind, c: api_custom_element, h: api_element} = $api;
-  const {_m0, _m1} = $ctx;
-  return [api_element("div", stc0, [api_element("div", stc1, [$cmp.showBack ? api_custom_element("componentes-flecha-paginacion", _componentesFlechaPaginacion, {
+  const {_m0, _m1, _m2, _m3, _m4} = $ctx;
+  return [api_element("div", stc0, [!$cmp.isMobile ? api_element("div", stc1, [$cmp.showBack ? api_custom_element("componentes-flecha-paginacion", _componentesFlechaPaginacion, {
     key: 2,
     on: {
       "click": _m0 || ($ctx._m0 = api_bind($cmp.handlerBack))
     }
-  }) : null]), api_element("div", stc2, [api_custom_element("componentes-carousel", _componentesCarousel, {
+  }) : null]) : null, api_element("div", stc2, [api_custom_element("componentes-carousel", _componentesCarousel, {
     classMap: stc3,
     props: {
       "tarjetasInfo": $cmp.proyectos
     },
-    key: 4
-  })]), api_element("div", stc4, [$cmp.showNext ? api_custom_element("componentes-flecha-paginacion", _componentesFlechaPaginacion, {
+    key: 4,
+    on: {
+      "touchend": _m1 || ($ctx._m1 = api_bind($cmp.handlerTouchEnd)),
+      "touchstart": _m2 || ($ctx._m2 = api_bind($cmp.handlerTouchStart)),
+      "touchmove": _m3 || ($ctx._m3 = api_bind($cmp.moveCarousel))
+    }
+  })]), !$cmp.isMobile ? api_element("div", stc4, [$cmp.showNext ? api_custom_element("componentes-flecha-paginacion", _componentesFlechaPaginacion, {
     key: 6,
     on: {
-      "click": _m1 || ($ctx._m1 = api_bind($cmp.handlerNext))
+      "click": _m4 || ($ctx._m4 = api_bind($cmp.handlerNext))
     }
-  }) : null])])];
+  }) : null]) : null])];
   /*LWC compiler v2.17.0*/
 }
 export default registerTemplate(tmpl);

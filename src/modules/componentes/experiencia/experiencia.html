@@ -1,17 +1,22 @@
 <template>
     <div class="experiencia-container">
+        <template if:false={isMobile}> 
             <div class="card-pagination-back">
                 <template if:true={showBack}>
                     <componentes-flecha-paginacion onclick={handlerBack}></componentes-flecha-paginacion>
                 </template>
             </div>
+        </template>
+
         <div class="cards-container">
-                <componentes-carousel class="card-carousel" tarjetas-info={proyectos}></componentes-carousel>
+                <componentes-carousel ontouchend={handlerTouchEnd} ontouchstart={handlerTouchStart} ontouchmove={moveCarousel} class="card-carousel" tarjetas-info={proyectos}></componentes-carousel>
         </div>
-        <div class="card-pagination-front"> 
-            <template if:true={showNext}>
-                <componentes-flecha-paginacion onclick={handlerNext}></componentes-flecha-paginacion>
-            </template>
-        </div>
+        <template if:false={isMobile}> 
+            <div class="card-pagination-front"> 
+                <template if:true={showNext}>
+                    <componentes-flecha-paginacion onclick={handlerNext}></componentes-flecha-paginacion>
+                </template>
+            </div>
+        </template>
     </div>
 </template>
