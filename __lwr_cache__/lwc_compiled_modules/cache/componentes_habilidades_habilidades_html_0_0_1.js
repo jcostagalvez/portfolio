@@ -4,10 +4,14 @@ import _implicitStylesheets from "./habilidades.css";
 
 import _implicitScopedStylesheets from "./habilidades.scoped.css?scoped=true";
 
+import _componentesHabilidadesCircle from "componentes/habilidadesCircle";
 import {registerTemplate} from "lwc";
-const stc0 = [];
+const stc0 = {
+  key: 0
+};
 function tmpl($api, $cmp, $slotset, $ctx) {
-  return stc0;
+  const {c: api_custom_element} = $api;
+  return [api_custom_element("componentes-habilidades-circle", _componentesHabilidadesCircle, stc0)];
   /*LWC compiler v2.17.0*/
 }
 export default registerTemplate(tmpl);

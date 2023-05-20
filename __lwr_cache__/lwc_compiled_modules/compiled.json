@@ -162,7 +162,7 @@
   [
     "componentes/titulo#titulo.html@0.0.1",
     {
-      "ownHash": "38eb547309eb53086b9dcc5e68a12482",
+      "ownHash": "97cff8beb1062353cd3be265660a21bc",
       "module": "./cache/componentes_titulo_titulo_html_0_0_1.js",
       "moduleMeta": "./cache/componentes_titulo_titulo_html_0_0_1.meta.json"
     }
@@ -2226,7 +2226,7 @@
   [
     "componentes/habilidades@0.0.1",
     {
-      "ownHash": "136f9d9a80d02d654b4d971c6477180a",
+      "ownHash": "795fc452143f8ed9db40f4c9795b5a47",
       "module": "./cache/componentes_habilidades_0_0_1.js",
       "moduleMeta": "./cache/componentes_habilidades_0_0_1.meta.json"
     }
@@ -2234,7 +2234,7 @@
   [
     "componentes/habilidades#habilidades.html@0.0.1",
     {
-      "ownHash": "6be8da594c989cd6372259abd2b3ff10",
+      "ownHash": "97a26a2b206de19020945c4cd19e6cba",
       "module": "./cache/componentes_habilidades_habilidades_html_0_0_1.js",
       "moduleMeta": "./cache/componentes_habilidades_habilidades_html_0_0_1.meta.json"
     }
@@ -2709,6 +2709,38 @@
       "ownHash": "93439fb3efa0237ca18d26b4b2f64745",
       "module": "./cache/_salesforce_label_LightningDateTimePicker_timeLabel_1_15_4-alpha.js",
       "moduleMeta": "./cache/_salesforce_label_LightningDateTimePicker_timeLabel_1_15_4-alpha.meta.json"
+    }
+  ],
+  [
+    "componentes/habilidadesCircle@0.0.1",
+    {
+      "ownHash": "e4a55151df9d42e3b85b89ae0f729c46",
+      "module": "./cache/componentes_habilidadesCircle_0_0_1.js",
+      "moduleMeta": "./cache/componentes_habilidadesCircle_0_0_1.meta.json"
+    }
+  ],
+  [
+    "componentes/habilidadesCircle#habilidadesCircle.html@0.0.1",
+    {
+      "ownHash": "2190c2c979e787bc48f80ff7fd0df5b0",
+      "module": "./cache/componentes_habilidadesCircle_habilidadesCircle_html_0_0_1.js",
+      "moduleMeta": "./cache/componentes_habilidadesCircle_habilidadesCircle_html_0_0_1.meta.json"
+    }
+  ],
+  [
+    "componentes/habilidadesCircle#habilidadesCircle.css@0.0.1",
+    {
+      "ownHash": "a5bd5d0cad827192926fd5ddfab6f1af",
+      "module": "./cache/componentes_habilidadesCircle_habilidadesCircle_css_0_0_1.js",
+      "moduleMeta": "./cache/componentes_habilidadesCircle_habilidadesCircle_css_0_0_1.meta.json"
+    }
+  ],
+  [
+    "componentes/habilidadesCircle#habilidadesCircle.scoped.css?scoped=true@0.0.1",
+    {
+      "ownHash": "13fcec3d73f055fccd306149598cb9b5",
+      "module": "./cache/componentes_habilidadesCircle_habilidadesCircle_scoped_css_scoped=true_0_0_1.js",
+      "moduleMeta": "./cache/componentes_habilidadesCircle_habilidadesCircle_scoped_css_scoped=true_0_0_1.meta.json"
     }
   ]
 ]
