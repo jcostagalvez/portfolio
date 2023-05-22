@@ -4,36 +4,22 @@ import * as d3 from 'd3';
 export default class habilidades_circle extends LightningElement {
     @api habilidad;
     @track fillPercentage;
-    @track habilidades = [ {
-        name: 'CSS' ,
-        años: 5,
-    },
-    {
-        name: 'JS' ,
-        años: 4,
-    },
-    {
-        name: 'NodeJs' ,
-        años: 1,
-    },
-    {
-        name: 'JAVA' ,
-        años: 1,
-    },
-    {
-        name: 'APEX' ,
-        años: 5,
-    },
-    {
-        name: 'LWC' ,
-        años: 4,
-    }]
+    @track radius;
+    @track heigth;
 
     connectedCallback(){
-      //const r = this.template.querySelector('.circle-background');
-      //console.log(r.getBoundingClientRect().width);
-      this.fillPercentage = (Math.PI * (90*2)) * 0.1;
-      this.dasHarray =  Math.PI*(90*2);  
+      const width = (window.innerWidth * 50)/100;
+      const diameter = (width * 10 )/ 100;
+      this.radius = diameter/2;
+      const fill = (100 - this.habilidad.experiencia) / 100; 
+      this.fillPercentage = (Math.PI * diameter) * fill;
+      this.dasHarray =  Math.PI*diameter;  
+    }
+
+    handleClick(){
+        
+        const circle = document.getElementById('circle');
+        console.log('circle is --> ' + circle);
     }
 
 }

@@ -4,16 +4,17 @@ import _implicitStylesheets from "./habilidadesCircle.css";
 
 import _implicitScopedStylesheets from "./habilidadesCircle.scoped.css?scoped=true";
 
-import {parseFragment, parseSVGFragment, registerTemplate} from "lwc";
-const $fragment1 = parseSVGFragment`<text class="circle-lenguaje${0}"${2}> CSS </text>`;
-const $fragment2 = parseFragment`<h1${3}> CSS </h1>`;
+import {registerTemplate} from "lwc";
 const stc0 = {
-  classMap: {
-    "circle-container": true
-  },
-  key: 0
+  "circle-container": true
 };
 const stc1 = {
+  classMap: {
+    "circle-title": true
+  },
+  key: 1
+};
+const stc2 = {
   classMap: {
     "circle-svg": true
   },
@@ -22,37 +23,51 @@ const stc1 = {
     "baseProfile": "full",
     "xmlns": "http://www.w3.org/2000/svg"
   },
-  key: 1,
+  key: 2,
   svg: true
 };
-const stc2 = {
+const stc3 = {
   "circle-background": true
 };
-const stc3 = {
+const stc4 = {
   "circle-front": true
 };
+const stc5 = {
+  classMap: {
+    "circle-percentage": true
+  },
+  key: 5
+};
 function tmpl($api, $cmp, $slotset, $ctx) {
-  const {h: api_element, st: api_static_fragment} = $api;
-  return [api_element("div", stc0, [api_element("svg", stc1, [api_element("circle", {
-    classMap: stc2,
+  const {gid: api_scoped_id, d: api_dynamic_text, t: api_text, h: api_element} = $api;
+  return [api_element("div", {
+    classMap: stc0,
     attrs: {
-      "r": "90px",
+      "id": api_scoped_id("circle")
+    },
+    key: 0
+  }, [api_element("h1", stc1, [api_text(" " + api_dynamic_text($cmp.habilidad.nombre) + " ")]), api_element("svg", stc2, [api_element("circle", {
+    classMap: stc3,
+    attrs: {
+      "cx": "50%",
+      "r": $cmp.radius,
       "stroke-dasharray": $cmp.dasHarray,
       "fill": "transparent"
     },
-    key: 2,
+    key: 3,
     svg: true
-  }), api_static_fragment($fragment1(), 4), api_element("circle", {
-    classMap: stc3,
+  }), api_element("circle", {
+    classMap: stc4,
     attrs: {
-      "r": "90px",
+      "cx": "50%",
+      "r": $cmp.radius,
       "fill": "transparent",
       "stroke-dasharray": $cmp.dasHarray,
       "stroke-dashoffset": $cmp.fillPercentage
     },
-    key: 5,
+    key: 4,
     svg: true
-  })]), api_static_fragment($fragment2(), 7)])];
+  })]), api_element("h2", stc5, [api_text(" " + api_dynamic_text($cmp.habilidad.experiencia) + " %")])])];
   /*LWC compiler v2.17.0*/
 }
 export default registerTemplate(tmpl);

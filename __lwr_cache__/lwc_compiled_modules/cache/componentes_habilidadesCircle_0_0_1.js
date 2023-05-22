@@ -6,31 +6,20 @@ class habilidades_circle extends LightningElement {
     super(...args);
     this.habilidad = void 0;
     this.fillPercentage = void 0;
-    this.habilidades = [{
-      name: 'CSS',
-      años: 5
-    }, {
-      name: 'JS',
-      años: 4
-    }, {
-      name: 'NodeJs',
-      años: 1
-    }, {
-      name: 'JAVA',
-      años: 1
-    }, {
-      name: 'APEX',
-      años: 5
-    }, {
-      name: 'LWC',
-      años: 4
-    }];
+    this.radius = void 0;
+    this.heigth = void 0;
   }
   connectedCallback() {
-    //const r = this.template.querySelector('.circle-background');
-    //console.log(r.getBoundingClientRect().width);
-    this.fillPercentage = Math.PI * (90 * 2) * 0.1;
-    this.dasHarray = Math.PI * (90 * 2);
+    const width = window.innerWidth * 50 / 100;
+    const diameter = width * 10 / 100;
+    this.radius = diameter / 2;
+    const fill = (100 - this.habilidad.experiencia) / 100;
+    this.fillPercentage = Math.PI * diameter * fill;
+    this.dasHarray = Math.PI * diameter;
+  }
+  handleClick() {
+    const circle = document.getElementById('circle');
+    console.log('circle is --> ' + circle);
   }
   /*LWC compiler v2.17.0*/
 }
@@ -42,7 +31,8 @@ _registerDecorators(habilidades_circle, {
   },
   track: {
     fillPercentage: 1,
-    habilidades: 1
+    radius: 1,
+    heigth: 1
   }
 });
 export default _registerComponent(habilidades_circle, {
