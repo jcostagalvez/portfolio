@@ -11,7 +11,7 @@ export default class habilidades_circle extends LightningElement {
       const width = (window.innerWidth * 50)/100;
       const diameter = (width * 10 )/ 100;
       this.radius = diameter/2;
-      const fill = (100 - this.habilidad.experiencia) / 100; 
+      const fill = (100 - this.habilidad.percentage) / 100; 
       this.fillPercentage = (Math.PI * diameter) * fill;
       this.dasHarray =  Math.PI*diameter;  
     }

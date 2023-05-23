@@ -64,10 +64,22 @@ dotenv.config();
         .catch((error) => console.log(error.data))
     })
 
-// Endpoint para la llamada de los lenguajes
-
-// Endpoint para la llamada del post un comentario
-
+// Endpoint para la llamada de las habilidades
+app.get('/api/habilidad/:nombre', function (req, res) {
+    axios.get(process.env.URL + '/services/apexrest/api/Habilidad/',
+    {
+        params: {
+            nombre: req.params.nombre
+        },
+        headers:{
+            'Authorization': 'Bearer ' + token
+        }
+    })
+    .then((success) => {
+        res.send(JSON.parse(success.data));
+    })
+    .catch((error) => console.log(error.data))
+})
 
     lwrServer.listen(({port, serverMode}) => {
         console.log(`Existe conexion en el puerto ${port}`);

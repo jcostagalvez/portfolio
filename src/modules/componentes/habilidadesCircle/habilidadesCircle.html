@@ -1,12 +1,12 @@
 <template>
     <div id="circle" class="circle-container">
-        <h1 class="circle-title"> {habilidad.nombre} </h1>
+        <h1 class="circle-title"> {habilidad.name} </h1>
         <svg class="circle-svg" version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg">
             <circle class="circle-background" cx="50%" r={radius} stroke-dasharray={dasHarray} fill="transparent"> 
             </circle>
             <circle class="circle-front" cx="50%" r={radius} fill="transparent"  stroke-dasharray={dasHarray} stroke-dashoffset={fillPercentage} > 
             </circle>
         </svg>
-        <h2 class="circle-percentage"> {habilidad.experiencia} %</h2>
+        <h2 class="circle-percentage"> {habilidad.percentage} %</h2>
     </div>
 </template>

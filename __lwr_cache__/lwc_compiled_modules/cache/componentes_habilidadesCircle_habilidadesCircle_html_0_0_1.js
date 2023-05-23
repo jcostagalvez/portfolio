@@ -46,7 +46,7 @@ function tmpl($api, $cmp, $slotset, $ctx) {
       "id": api_scoped_id("circle")
     },
     key: 0
-  }, [api_element("h1", stc1, [api_text(" " + api_dynamic_text($cmp.habilidad.nombre) + " ")]), api_element("svg", stc2, [api_element("circle", {
+  }, [api_element("h1", stc1, [api_text(" " + api_dynamic_text($cmp.habilidad.name) + " ")]), api_element("svg", stc2, [api_element("circle", {
     classMap: stc3,
     attrs: {
       "cx": "50%",
@@ -67,7 +67,7 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     },
     key: 4,
     svg: true
-  })]), api_element("h2", stc5, [api_text(" " + api_dynamic_text($cmp.habilidad.experiencia) + " %")])])];
+  })]), api_element("h2", stc5, [api_text(" " + api_dynamic_text($cmp.habilidad.percentage) + " %")])])];
   /*LWC compiler v2.17.0*/
 }
 export default registerTemplate(tmpl);

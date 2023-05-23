@@ -36,7 +36,7 @@ function tmpl($api, $cmp, $slotset, $ctx) {
   return [api_element("div", stc0, [api_static_fragment($fragment1(), 2), api_element("div", stc1, [api_element("div", stc2, api_iterator($cmp.habilidades, function (habilidad) {
     return api_element("div", {
       classMap: stc3,
-      key: api_key(5, habilidad.nombre)
+      key: api_key(5, habilidad.name)
     }, [api_custom_element("componentes-habilidades-circle", _componentesHabilidadesCircle, {
       classMap: stc4,
       props: {
