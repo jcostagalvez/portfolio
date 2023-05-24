@@ -8,9 +8,12 @@ class habilidades_circle extends LightningElement {
     this.fillPercentage = void 0;
     this.radius = void 0;
     this.heigth = void 0;
+    this.isMobile = false;
   }
   connectedCallback() {
-    const width = window.innerWidth * 50 / 100;
+    this.isMobile = window.matchMedia("(max-width: 480px)").matches;
+    this.elementPerpage = this.isMobile == true ? 2 : 6;
+    const width = !this.isMobile ? window.innerWidth * 50 / 100 : window.innerWidth * 50 / 100 * 5;
     const diameter = width * 10 / 100;
     this.radius = diameter / 2;
     const fill = (100 - this.habilidad.percentage) / 100;
@@ -32,7 +35,8 @@ _registerDecorators(habilidades_circle, {
   track: {
     fillPercentage: 1,
     radius: 1,
-    heigth: 1
+    heigth: 1,
+    isMobile: 1
   }
 });
 export default _registerComponent(habilidades_circle, {

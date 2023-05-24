@@ -2,13 +2,30 @@
     <div class="habilidades-container">
         <h1> %  EXPERIENCIA EN HABILIDADES</h1>
         <div class="habilidad-container">
-            <div class="habilidad-cards">
-                <template for:each={habilidades} for:item="habilidad">
+            <template if:false={isMobile}> 
+                <div class="card-pagination-back">
+                    <template if:true={showBack}>
+                        <componentes-flecha-paginacion onclick={handlerBack}></componentes-flecha-paginacion>
+                    </template>
+                </div>
+            </template>
+
+            <div ontouchend={handlerTouchEnd} ontouchstart={handlerTouchStart} ontouchmove={moveCarousel} class="habilidad-cards">
+                <template for:each={habilidadesShow} for:item="habilidad">
                     <div class="habilidad-flex" key={habilidad.name}>
                         <componentes-habilidades-circle class="habilidad-function" key={habilidad.name} habilidad={habilidad}></componentes-habilidades-circle>
                     </div> 
                 </template>
             </div>
+
+            <template if:false={isMobile}> 
+                <div class="card-pagination-front"> 
+                    <template if:true={showNext}>
+                        <componentes-flecha-paginacion onclick={handlerNext}></componentes-flecha-paginacion>
+                    </template>
+                </div>
+            </template>
+
         </div>
     </div>
 </template>

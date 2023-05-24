@@ -2226,7 +2226,7 @@
   [
     "componentes/habilidades@0.0.1",
     {
-      "ownHash": "f05dbb03e4b63b81e1189e9565176ee0",
+      "ownHash": "10f6e19b8736aa574f7eb8c81abc95a1",
       "module": "./cache/componentes_habilidades_0_0_1.js",
       "moduleMeta": "./cache/componentes_habilidades_0_0_1.meta.json"
     }
@@ -2234,7 +2234,7 @@
   [
     "componentes/habilidades#habilidades.html@0.0.1",
     {
-      "ownHash": "1a2ac9d9d02cba8f0145b552a1713da3",
+      "ownHash": "0e3aa457c9a94c64b3874f5c53f58c39",
       "module": "./cache/componentes_habilidades_habilidades_html_0_0_1.js",
       "moduleMeta": "./cache/componentes_habilidades_habilidades_html_0_0_1.meta.json"
     }
@@ -2242,7 +2242,7 @@
   [
     "componentes/habilidades#habilidades.css@0.0.1",
     {
-      "ownHash": "937b19b97f86b303d3c516b586069b47",
+      "ownHash": "c9304eec5aefc59034e3663423cc36c6",
       "module": "./cache/componentes_habilidades_habilidades_css_0_0_1.js",
       "moduleMeta": "./cache/componentes_habilidades_habilidades_css_0_0_1.meta.json"
     }
@@ -2714,7 +2714,7 @@
   [
     "componentes/habilidadesCircle@0.0.1",
     {
-      "ownHash": "d44f66cedbdf858de9f4f32ec30834c7",
+      "ownHash": "591e8bd0184bc3df3d18d50f9a5072c9",
       "module": "./cache/componentes_habilidadesCircle_0_0_1.js",
       "moduleMeta": "./cache/componentes_habilidadesCircle_0_0_1.meta.json"
     }
