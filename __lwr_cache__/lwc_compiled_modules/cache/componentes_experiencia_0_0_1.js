@@ -33,21 +33,25 @@ class experiencia extends LightningElement {
   }
   handlerNext() {
     const elementVisible = this.proyectos.filter(proyecto => proyecto.isVisible == true);
-    elementVisible[0].isVisible = false;
     const index = this.proyectos.map(proyecto => proyecto.empresa).indexOf(elementVisible[0].empresa) + 1;
     const nextIndex = index + 1;
-    this.changeVisibilityPagination(nextIndex);
-    this.proyectos[nextIndex - 1].isVisible = true;
-    this.pageSelected = nextIndex;
+    if (nextIndex < this.proyectos.length) {
+      elementVisible[0].isVisible = false;
+      this.changeVisibilityPagination(nextIndex);
+      this.proyectos[nextIndex - 1].isVisible = true;
+      this.pageSelected = nextIndex;
+    }
   }
   handlerBack() {
     const elementVisible = this.proyectos.filter(proyecto => proyecto.isVisible == true);
-    elementVisible[0].isVisible = false;
     const index = this.proyectos.map(proyecto => proyecto.empresa).indexOf(elementVisible[0].empresa) + 1;
     const backIndex = index - 1;
-    this.changeVisibilityPagination(backIndex);
-    this.proyectos[backIndex - 1].isVisible = true;
-    this.pageSelected = backIndex;
+    if (backIndex > 0) {
+      elementVisible[0].isVisible = false;
+      this.changeVisibilityPagination(backIndex);
+      this.proyectos[backIndex - 1].isVisible = true;
+      this.pageSelected = backIndex;
+    }
   }
   moveCarousel(e) {
     this.finalPixeles = e.touches[0].clientX;
