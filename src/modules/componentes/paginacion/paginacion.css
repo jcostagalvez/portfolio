@@ -1,0 +1,26 @@
+.circles_container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.unselected{
+    background-color: none;
+    border-radius: 50%;
+    border: 2px solid orange;
+    width: 20px;
+    height: 20px;
+    margin-left: 3%;
+    cursor: pointer ;
+}
+
+.selected{
+    border-radius: 50%;
+    background-color: orange;
+    border: 2px solid orange;
+    width: 20px;
+    height: 20px;
+    margin-left: 3%;
+    cursor: pointer ;
+}

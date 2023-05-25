@@ -10,7 +10,10 @@
 
         <div class="cards-container">
                 <componentes-carousel ontouchend={handlerTouchEnd} ontouchstart={handlerTouchStart} ontouchmove={moveCarousel} class="card-carousel" tarjetas-info={proyectos}></componentes-carousel>
-        </div>
+                <template if:true={proyectos.length}>
+                    <componentes-paginacion page={pageSelected} size={proyectos.length} onselect={changePage} class="cards-paginacion"></componentes-paginacion>
+                </template>
+            </div>
         <template if:false={isMobile}> 
             <div class="card-pagination-front"> 
                 <template if:true={showNext}>
@@ -19,4 +22,5 @@
             </div>
         </template>
     </div>
+
 </template>

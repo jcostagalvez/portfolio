@@ -6,6 +6,7 @@ import _implicitScopedStylesheets from "./experiencia.scoped.css?scoped=true";
 
 import _componentesFlechaPaginacion from "componentes/flechaPaginacion";
 import _componentesCarousel from "componentes/carousel";
+import _componentesPaginacion from "componentes/paginacion";
 import {registerTemplate} from "lwc";
 const stc0 = {
   classMap: {
@@ -29,14 +30,17 @@ const stc3 = {
   "card-carousel": true
 };
 const stc4 = {
+  "cards-paginacion": true
+};
+const stc5 = {
   classMap: {
     "card-pagination-front": true
   },
-  key: 5
+  key: 6
 };
 function tmpl($api, $cmp, $slotset, $ctx) {
   const {b: api_bind, c: api_custom_element, h: api_element} = $api;
-  const {_m0, _m1, _m2, _m3, _m4} = $ctx;
+  const {_m0, _m1, _m2, _m3, _m4, _m5} = $ctx;
   return [api_element("div", stc0, [!$cmp.isMobile ? api_element("div", stc1, [$cmp.showBack ? api_custom_element("componentes-flecha-paginacion", _componentesFlechaPaginacion, {
     key: 2,
     on: {
@@ -53,10 +57,20 @@ function tmpl($api, $cmp, $slotset, $ctx) {
       "touchstart": _m2 || ($ctx._m2 = api_bind($cmp.handlerTouchStart)),
       "touchmove": _m3 || ($ctx._m3 = api_bind($cmp.moveCarousel))
     }
-  })]), !$cmp.isMobile ? api_element("div", stc4, [$cmp.showNext ? api_custom_element("componentes-flecha-paginacion", _componentesFlechaPaginacion, {
-    key: 6,
+  }), $cmp.proyectos.length ? api_custom_element("componentes-paginacion", _componentesPaginacion, {
+    classMap: stc4,
+    props: {
+      "page": $cmp.pageSelected,
+      "size": $cmp.proyectos.length
+    },
+    key: 5,
     on: {
-      "click": _m4 || ($ctx._m4 = api_bind($cmp.handlerNext))
+      "select": _m4 || ($ctx._m4 = api_bind($cmp.changePage))
+    }
+  }) : null]), !$cmp.isMobile ? api_element("div", stc5, [$cmp.showNext ? api_custom_element("componentes-flecha-paginacion", _componentesFlechaPaginacion, {
+    key: 7,
+    on: {
+      "click": _m5 || ($ctx._m5 = api_bind($cmp.handlerNext))
     }
   }) : null]) : null])];
   /*LWC compiler v2.17.0*/

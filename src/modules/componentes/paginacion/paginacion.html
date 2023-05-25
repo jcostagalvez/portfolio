@@ -1,0 +1,11 @@
+<template>
+    <template if:true={change}> 
+        <div class="circles_container">
+            <template for:each={pages} for:item="page">
+                <div data-id={page.id} onclick={clikHandler} class={page.class} key={page.id}> </div>
+            </template>
+        </div>
+    </template>
+
+
+</template>

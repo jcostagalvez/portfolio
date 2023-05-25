@@ -1314,7 +1314,7 @@
   [
     "componentes/experiencia@0.0.1",
     {
-      "ownHash": "1f4f9d590eee264ef5cc5b989dfb5c18",
+      "ownHash": "ba30b65fc47d6ccdeb240cc8bd15e3da",
       "module": "./cache/componentes_experiencia_0_0_1.js",
       "moduleMeta": "./cache/componentes_experiencia_0_0_1.meta.json"
     }
@@ -1322,7 +1322,7 @@
   [
     "componentes/experiencia#experiencia.html@0.0.1",
     {
-      "ownHash": "2e7f97697f79a070759498f101bb0b31",
+      "ownHash": "68df868ac2e0b66571695b6c470cdab4",
       "module": "./cache/componentes_experiencia_experiencia_html_0_0_1.js",
       "moduleMeta": "./cache/componentes_experiencia_experiencia_html_0_0_1.meta.json"
     }
@@ -1330,7 +1330,7 @@
   [
     "componentes/experiencia#experiencia.css@0.0.1",
     {
-      "ownHash": "c8c38d675ccebfc1882177b98a594d5a",
+      "ownHash": "6f7c6b109ac001eb6f5cb9dde0b19d35",
       "module": "./cache/componentes_experiencia_experiencia_css_0_0_1.js",
       "moduleMeta": "./cache/componentes_experiencia_experiencia_css_0_0_1.meta.json"
     }
@@ -1362,7 +1362,7 @@
   [
     "componentes/tarjetaExperiencia#tarjetaExperiencia.css@0.0.1",
     {
-      "ownHash": "abf953116f7094051f7d76fd0cef95cf",
+      "ownHash": "f51865e99acc9e30d317b5775e878a4d",
       "module": "./cache/componentes_tarjetaExperiencia_tarjetaExperiencia_css_0_0_1.js",
       "moduleMeta": "./cache/componentes_tarjetaExperiencia_tarjetaExperiencia_css_0_0_1.meta.json"
     }
@@ -2226,7 +2226,7 @@
   [
     "componentes/habilidades@0.0.1",
     {
-      "ownHash": "10f6e19b8736aa574f7eb8c81abc95a1",
+      "ownHash": "915144447601f4e3af854e2fc484293b",
       "module": "./cache/componentes_habilidades_0_0_1.js",
       "moduleMeta": "./cache/componentes_habilidades_0_0_1.meta.json"
     }
@@ -2234,7 +2234,7 @@
   [
     "componentes/habilidades#habilidades.html@0.0.1",
     {
-      "ownHash": "0e3aa457c9a94c64b3874f5c53f58c39",
+      "ownHash": "2e36ddab8c101ebef7d8aa574d679c79",
       "module": "./cache/componentes_habilidades_habilidades_html_0_0_1.js",
       "moduleMeta": "./cache/componentes_habilidades_habilidades_html_0_0_1.meta.json"
     }
@@ -2741,6 +2741,70 @@
       "ownHash": "13fcec3d73f055fccd306149598cb9b5",
       "module": "./cache/componentes_habilidadesCircle_habilidadesCircle_scoped_css_scoped=true_0_0_1.js",
       "moduleMeta": "./cache/componentes_habilidadesCircle_habilidadesCircle_scoped_css_scoped=true_0_0_1.meta.json"
+    }
+  ],
+  [
+    "componentes/carouselpages@0.0.1",
+    {
+      "ownHash": "f594d4888da1cdfe2b84c9f926cd72c7",
+      "module": "./cache/componentes_carouselpages_0_0_1.js",
+      "moduleMeta": "./cache/componentes_carouselpages_0_0_1.meta.json"
+    }
+  ],
+  [
+    "componentes/carouselpages#carouselpages.html@0.0.1",
+    {
+      "ownHash": "13fcec3d73f055fccd306149598cb9b5",
+      "module": "./cache/componentes_carouselpages_carouselpages_html_0_0_1.js",
+      "moduleMeta": "./cache/componentes_carouselpages_carouselpages_html_0_0_1.meta.json"
+    }
+  ],
+  [
+    "componentes/carouselpages#carouselpages.css@0.0.1",
+    {
+      "ownHash": "13fcec3d73f055fccd306149598cb9b5",
+      "module": "./cache/componentes_carouselpages_carouselpages_css_0_0_1.js",
+      "moduleMeta": "./cache/componentes_carouselpages_carouselpages_css_0_0_1.meta.json"
+    }
+  ],
+  [
+    "componentes/carouselpages#carouselpages.scoped.css?scoped=true@0.0.1",
+    {
+      "ownHash": "13fcec3d73f055fccd306149598cb9b5",
+      "module": "./cache/componentes_carouselpages_carouselpages_scoped_css_scoped=true_0_0_1.js",
+      "moduleMeta": "./cache/componentes_carouselpages_carouselpages_scoped_css_scoped=true_0_0_1.meta.json"
+    }
+  ],
+  [
+    "componentes/paginacion@0.0.1",
+    {
+      "ownHash": "59ea47eae85eabfff83617c9ca4b00bd",
+      "module": "./cache/componentes_paginacion_0_0_1.js",
+      "moduleMeta": "./cache/componentes_paginacion_0_0_1.meta.json"
+    }
+  ],
+  [
+    "componentes/paginacion#paginacion.html@0.0.1",
+    {
+      "ownHash": "361535ba6fff27d02e4658fbd9b9a623",
+      "module": "./cache/componentes_paginacion_paginacion_html_0_0_1.js",
+      "moduleMeta": "./cache/componentes_paginacion_paginacion_html_0_0_1.meta.json"
+    }
+  ],
+  [
+    "componentes/paginacion#paginacion.css@0.0.1",
+    {
+      "ownHash": "fcab60690c5776a7623da25ffeb331c8",
+      "module": "./cache/componentes_paginacion_paginacion_css_0_0_1.js",
+      "moduleMeta": "./cache/componentes_paginacion_paginacion_css_0_0_1.meta.json"
+    }
+  ],
+  [
+    "componentes/paginacion#paginacion.scoped.css?scoped=true@0.0.1",
+    {
+      "ownHash": "13fcec3d73f055fccd306149598cb9b5",
+      "module": "./cache/componentes_paginacion_paginacion_scoped_css_scoped=true_0_0_1.js",
+      "moduleMeta": "./cache/componentes_paginacion_paginacion_scoped_css_scoped=true_0_0_1.meta.json"
     }
   ]
 ]

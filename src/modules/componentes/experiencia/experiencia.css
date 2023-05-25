@@ -2,24 +2,41 @@
     .cards-container{
         width: 100%;
     }
+    .cards-paginacion{
+        margin-top: 4%
+    }
 }
 
 @media (max-width: 480px){
     .cards-container{
+        margin-top: 70%;
         width: 100%;
         height: 100%;
+    }
+    .cards-paginacion{
+        margin-top: 10%
     }
 }
 
 .experiencia-container{
     width: 100%;
-    height: 90%;
+    height: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+.paginacion_container{
+    height: 10%;
+    width: 100%;
+}
+.cards-paginacion{
+    width: 100%;
+    height: 100%;
+}
 .cards-container{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }

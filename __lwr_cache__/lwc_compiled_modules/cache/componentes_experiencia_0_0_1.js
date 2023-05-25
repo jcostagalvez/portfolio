@@ -10,6 +10,7 @@ class experiencia extends LightningElement {
     this.isMobile = '';
     this.inicioPixeles = '';
     this.finalPixeles = '';
+    this.pageSelected = 1;
   }
   connectedCallback() {
     this.isMobile = window.matchMedia("(max-width: 480px)").matches;
@@ -31,48 +32,22 @@ class experiencia extends LightningElement {
     }).catch(error => console.log(error));
   }
   handlerNext() {
-    let nextIndex;
-    this.proyectos.forEach((element, index) => {
-      if (element.isVisible === true) {
-        element.isVisible = false;
-        if (index + 1 >= this.proyectos.length - 1) {
-          nextIndex = this.proyectos.length - 1;
-          this.showNext = false;
-          this.showBack = true;
-        } else {
-          this.showBack = true;
-          nextIndex = index + 1;
-          console.log('index  ' + index);
-          console.log('nextIndex  ' + nextIndex);
-        }
-        return;
-      }
-    });
-    this.proyectos[nextIndex].isVisible = true;
-    console.log('arrayNextIndex    ' + this.proyectos[0].isVisible);
+    const elementVisible = this.proyectos.filter(proyecto => proyecto.isVisible == true);
+    elementVisible[0].isVisible = false;
+    const index = this.proyectos.map(proyecto => proyecto.empresa).indexOf(elementVisible[0].empresa) + 1;
+    const nextIndex = index + 1;
+    this.changeVisibilityPagination(nextIndex);
+    this.proyectos[nextIndex - 1].isVisible = true;
+    this.pageSelected = nextIndex;
   }
   handlerBack() {
-    let backIndex = 0;
-    this.proyectos.forEach((element, index) => {
-      console.log(`index ----->>> ${index}`);
-      if (element.isVisible === true) {
-        console.log(`index del true ----->>> ${index}`);
-        element.isVisible = false;
-        if (index - 1 == 0) {
-          backIndex = 0;
-          this.showBack = false;
-          this.showNext = true;
-        } else if (index - 1 < 0) {
-          backIndex = index;
-        } else {
-          this.showNext = true;
-          backIndex = index - 1;
-        }
-        return;
-      }
-    });
-    console.log('this.backIndex  ' + backIndex);
-    this.proyectos[backIndex].isVisible = true;
+    const elementVisible = this.proyectos.filter(proyecto => proyecto.isVisible == true);
+    elementVisible[0].isVisible = false;
+    const index = this.proyectos.map(proyecto => proyecto.empresa).indexOf(elementVisible[0].empresa) + 1;
+    const backIndex = index - 1;
+    this.changeVisibilityPagination(backIndex);
+    this.proyectos[backIndex - 1].isVisible = true;
+    this.pageSelected = backIndex;
   }
   moveCarousel(e) {
     this.finalPixeles = e.touches[0].clientX;
@@ -93,6 +68,27 @@ class experiencia extends LightningElement {
       this.handlerBack();
     }
   }
+  changePage(event) {
+    const index = parseInt(event.detail, 10);
+    const elementVisible = this.proyectos.filter(proyecto => proyecto.isVisible == true);
+    elementVisible[0].isVisible = false;
+    this.changeVisibilityPagination(index);
+    this.proyectos[event.detail - 1].isVisible = true;
+  }
+  changeVisibilityPagination(index) {
+    console.log('index -----------> ' + index);
+    console.log('this.proyectos.length - 1 -----------> ' + this.proyectos.length - 1);
+    if (index > this.proyectos.length - 1) {
+      this.showNext = false;
+      this.showBack = true;
+    } else if (index - 1 == 0) {
+      this.showBack = false;
+      this.showNext = true;
+    } else {
+      this.showBack = true;
+      this.showNext = true;
+    }
+  }
   /*LWC compiler v2.17.0*/
 }
 _registerDecorators(experiencia, {
@@ -103,7 +99,8 @@ _registerDecorators(experiencia, {
     renderoptionlist: 1,
     isMobile: 1,
     inicioPixeles: 1,
-    finalPixeles: 1
+    finalPixeles: 1,
+    pageSelected: 1
   }
 });
 export default _registerComponent(experiencia, {
