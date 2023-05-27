@@ -19,6 +19,7 @@ export default class habilidades extends LightningElement{
         fetch('/api/habilidad/Jesús Costa Gálvez')
         .then(response => response.json())
         .then(response => {
+            this.dispatchEvent(new CustomEvent('load'));
             this.habilidades = response;
             this.pages = response.length / this.elementPerpage;
             if(this.isMobile){

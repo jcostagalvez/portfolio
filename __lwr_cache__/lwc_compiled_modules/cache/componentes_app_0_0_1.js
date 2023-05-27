@@ -5,21 +5,26 @@ class app extends LightningElement {
   constructor(...args) {
     super(...args);
     this.navigationElements = navigationElements;
+    this.isLoad = false;
     this.navigationItems = navigationItems;
     this.pastTab = '';
     this.actualTab = '';
     this.introduction = true;
     this.portfolio = false;
   }
+  setStatusLoad() {
+    this.isLoad = true;
+  }
   connectedCallback() {
     fetch('/api/login').then(res => {
+      this.isLoad = true;
       console.log('conectado');
     });
   }
   handleClick(event) {
     this.introduction = false;
     this.portfolio = true;
-    console.log(this.introduction);
+    this.navigationItems['Experiencia'].visible = true;
   }
   handleNavSelected(event) {
     const tab = event.detail;
@@ -41,7 +46,7 @@ _registerDecorators(app, {
     introduction: 1,
     portfolio: 1
   },
-  fields: ["navigationElements", "pastTab", "actualTab"]
+  fields: ["navigationElements", "isLoad", "pastTab", "actualTab"]
 });
 export default _registerComponent(app, {
   tmpl: _tmpl

@@ -4,6 +4,7 @@ export default class formacion extends LightningElement{
         @track lstCurricular = [];
         @track lstNoCurricular = [];
         @track curricular = true;
+        
     connectedCallback(){
         fetch('/api/Formacion/Jesús Costa Gálvez')
         .then(response => response.json())
@@ -17,7 +18,7 @@ export default class formacion extends LightningElement{
                     this.lstNoCurricular.push(formacion);
                 }
             });
-
+            this.dispatchEvent(new CustomEvent('load'));
             console.log(this.lstCurricular);
             console.log(this.lstNoCurricular);
         })

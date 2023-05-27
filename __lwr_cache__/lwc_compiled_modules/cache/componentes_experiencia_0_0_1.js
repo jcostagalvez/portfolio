@@ -23,6 +23,7 @@ class experiencia extends LightningElement {
         let fecha_final = new Date(item.final_fecha);
         item.inicio_fecha = `${fecha_Inicio.getMonth() < 10 ? '0' + fecha_Inicio.getMonth() : fecha_Inicio.getMonth()} / ${fecha_Inicio.getFullYear()}`;
         item.final_fecha = `${fecha_final.getMonth() < 10 ? '0' + fecha_final.getMonth() : fecha_final.getMonth()} / ${fecha_final.getFullYear()}`;
+        this.dispatchEvent(new CustomEvent('load'));
         if (index === 0) {
           item.isVisible = true;
         } else {
@@ -35,7 +36,10 @@ class experiencia extends LightningElement {
     const elementVisible = this.proyectos.filter(proyecto => proyecto.isVisible == true);
     const index = this.proyectos.map(proyecto => proyecto.empresa).indexOf(elementVisible[0].empresa) + 1;
     const nextIndex = index + 1;
-    if (nextIndex < this.proyectos.length) {
+    console.log('next index ---->' + nextIndex);
+    console.log('this.proyectos.length ---->' + this.proyectos.length);
+    if (nextIndex < this.proyectos.length + 1) {
+      console.log('PASA POR AQUI ---->');
       elementVisible[0].isVisible = false;
       this.changeVisibilityPagination(nextIndex);
       this.proyectos[nextIndex - 1].isVisible = true;

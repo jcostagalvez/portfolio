@@ -18,6 +18,7 @@ class habilidades extends LightningElement {
     this.isMobile = window.matchMedia("(max-width: 480px)").matches;
     this.elementPerpage = this.isMobile == true ? 2 : 6;
     fetch('/api/habilidad/Jesús Costa Gálvez').then(response => response.json()).then(response => {
+      this.dispatchEvent(new CustomEvent('load'));
       this.habilidades = response;
       this.pages = response.length / this.elementPerpage;
       if (this.isMobile) {

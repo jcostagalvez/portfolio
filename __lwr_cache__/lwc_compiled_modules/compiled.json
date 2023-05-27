@@ -2,7 +2,7 @@
   [
     "componentes/app@0.0.1",
     {
-      "ownHash": "cf6ce4161dfebe9b9ff9bd902eb8f942",
+      "ownHash": "fb65fc63b063739820729f99a1f1f677",
       "module": "./cache/componentes_app_0_0_1.js",
       "moduleMeta": "./cache/componentes_app_0_0_1.meta.json"
     }
@@ -82,7 +82,7 @@
   [
     "componentes/app#app.html@0.0.1",
     {
-      "ownHash": "731f60cdda3182e7fa086c84e1161dbd",
+      "ownHash": "edfd1ca9e3c530974b407b8444fc0e11",
       "module": "./cache/componentes_app_app_html_0_0_1.js",
       "moduleMeta": "./cache/componentes_app_app_html_0_0_1.meta.json"
     }
@@ -1314,7 +1314,7 @@
   [
     "componentes/experiencia@0.0.1",
     {
-      "ownHash": "6d8a9393bc24ce68c0fac14a99d07835",
+      "ownHash": "5f0de54f375324990d43ba97e5203eeb",
       "module": "./cache/componentes_experiencia_0_0_1.js",
       "moduleMeta": "./cache/componentes_experiencia_0_0_1.meta.json"
     }
@@ -1634,7 +1634,7 @@
   [
     "componentes/formacion@0.0.1",
     {
-      "ownHash": "a1ed591addfe65d0e911e41fd9ca3699",
+      "ownHash": "cd77c3474db34bbe2dddfd28328226e5",
       "module": "./cache/componentes_formacion_0_0_1.js",
       "moduleMeta": "./cache/componentes_formacion_0_0_1.meta.json"
     }
@@ -2226,7 +2226,7 @@
   [
     "componentes/habilidades@0.0.1",
     {
-      "ownHash": "915144447601f4e3af854e2fc484293b",
+      "ownHash": "9ab38d587e0428b0d1b84b587fba9cad",
       "module": "./cache/componentes_habilidades_0_0_1.js",
       "moduleMeta": "./cache/componentes_habilidades_0_0_1.meta.json"
     }
@@ -2805,6 +2805,38 @@
       "ownHash": "13fcec3d73f055fccd306149598cb9b5",
       "module": "./cache/componentes_paginacion_paginacion_scoped_css_scoped=true_0_0_1.js",
       "moduleMeta": "./cache/componentes_paginacion_paginacion_scoped_css_scoped=true_0_0_1.meta.json"
+    }
+  ],
+  [
+    "componentes/spinner@0.0.1",
+    {
+      "ownHash": "0a08d84b876040261f6f45552bc3ce7e",
+      "module": "./cache/componentes_spinner_0_0_1.js",
+      "moduleMeta": "./cache/componentes_spinner_0_0_1.meta.json"
+    }
+  ],
+  [
+    "componentes/spinner#spinner.html@0.0.1",
+    {
+      "ownHash": "eae0e84d20bb39517338ad74f32e4bf4",
+      "module": "./cache/componentes_spinner_spinner_html_0_0_1.js",
+      "moduleMeta": "./cache/componentes_spinner_spinner_html_0_0_1.meta.json"
+    }
+  ],
+  [
+    "componentes/spinner#spinner.css@0.0.1",
+    {
+      "ownHash": "73503af7f69fb73d36b9c3131bb17b86",
+      "module": "./cache/componentes_spinner_spinner_css_0_0_1.js",
+      "moduleMeta": "./cache/componentes_spinner_spinner_css_0_0_1.meta.json"
+    }
+  ],
+  [
+    "componentes/spinner#spinner.scoped.css?scoped=true@0.0.1",
+    {
+      "ownHash": "13fcec3d73f055fccd306149598cb9b5",
+      "module": "./cache/componentes_spinner_spinner_scoped_css_scoped=true_0_0_1.js",
+      "moduleMeta": "./cache/componentes_spinner_spinner_scoped_css_scoped=true_0_0_1.meta.json"
     }
   ]
 ]

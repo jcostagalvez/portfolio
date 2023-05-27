@@ -3,22 +3,26 @@ import {navigationItems, navigationElements} from "./navigation";
 
 export default class app extends LightningElement{
     navigationElements = navigationElements;
+    isLoad = false;
     @track navigationItems = navigationItems;
      pastTab = '';
     actualTab = '';
     @track introduction = true;
     @track portfolio = false;
-
+    setStatusLoad(){
+        this.isLoad = true;
+    }
     connectedCallback(){
         fetch('/api/login')
         .then((res) => {
+            this.isLoad = true;
             console.log('conectado');
         })
     }
     handleClick(event){
         this.introduction = false;
         this.portfolio = true;
-        console.log(this.introduction);
+        this.navigationItems['Experiencia'].visible = true;
     }
 
     handleNavSelected(event){

@@ -18,6 +18,7 @@ class formacion extends LightningElement {
           this.lstNoCurricular.push(formacion);
         }
       });
+      this.dispatchEvent(new CustomEvent('load'));
       console.log(this.lstCurricular);
       console.log(this.lstNoCurricular);
     }).catch(err => console.log(err));

@@ -5,14 +5,17 @@
                 </tempalte>
                 <tempalte if:true={portfolio}>
                         <componentes-navigation-bar onnavselected={handleNavSelected} tabs={navigationElements}></componentes-navigation-bar>
+                        <template if:false={isLoad}>
+                                <componentes-spinner></componentes-spinner>
+                        </template>
                         <tempalte if:true={navigationItems.Experiencia.visible}>
-                                <componentes-experiencia></componentes-experiencia>
+                                <componentes-experiencia onload={setStatusLoad}></componentes-experiencia>
                         </tempalte>
                         <tempalte if:true={navigationItems.Formación.visible}>
-                                <componentes-formacion></componentes-formacion>
+                                <componentes-formacion onload={setStatusLoad}></componentes-formacion>
                         </tempalte>
                         <tempalte if:true={navigationItems.Habilidades.visible}>
-                                <componentes-habilidades></componentes-habilidades>
+                                <componentes-habilidades onload={setStatusLoad}></componentes-habilidades>
                         </tempalte>
                         <tempalte if:true={navigationItems.Contacto.visible}>
                                 <componentes-contacto></componentes-contacto>
