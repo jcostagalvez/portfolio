@@ -38,6 +38,7 @@ lightning-accordion-section{
 }
 
 .card_accordion{
-    width: 50%;
+    width: 90%;
+    height: 100%;
     margin: 1%;
 }

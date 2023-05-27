@@ -24,7 +24,6 @@ class app extends LightningElement {
   handleClick(event) {
     this.introduction = false;
     this.portfolio = true;
-    this.navigationItems['Experiencia'].visible = true;
   }
   handleNavSelected(event) {
     const tab = event.detail;
