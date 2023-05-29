@@ -2,7 +2,7 @@
   [
     "componentes/app@0.0.1",
     {
-      "ownHash": "8f64c04d57eab0db5e9aac5d349a677f",
+      "ownHash": "7f0b0accb1627dd50b5cc9159af03232",
       "module": "./cache/componentes_app_0_0_1.js",
       "moduleMeta": "./cache/componentes_app_0_0_1.meta.json"
     }
@@ -82,7 +82,7 @@
   [
     "componentes/app#app.html@0.0.1",
     {
-      "ownHash": "7e01ac6d4d5b112b5eacb24ba52e13f4",
+      "ownHash": "edfd1ca9e3c530974b407b8444fc0e11",
       "module": "./cache/componentes_app_app_html_0_0_1.js",
       "moduleMeta": "./cache/componentes_app_app_html_0_0_1.meta.json"
     }

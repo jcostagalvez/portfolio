@@ -5,7 +5,7 @@ export default class app extends LightningElement{
     navigationElements = navigationElements;
     isLoad = false;
     @track navigationItems = navigationItems;
-     pastTab = '';
+    pastTab = '';
     actualTab = '';
     @track introduction = true;
     @track portfolio = false;
@@ -22,10 +22,11 @@ export default class app extends LightningElement{
     handleClick(event){
         this.introduction = false;
         this.portfolio = true;
+        this.actualTab= "Experiencia";
+        this.navigationItems["Experiencia"].visible = true;
     }
 
     handleNavSelected(event){
-
         const tab = event.detail;
         if(this.actualTab == ''){
             this.actualTab = tab;

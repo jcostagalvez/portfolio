@@ -5,6 +5,9 @@
                 </tempalte>
                 <tempalte if:true={portfolio}>
                         <componentes-navigation-bar onnavselected={handleNavSelected} tabs={navigationElements}></componentes-navigation-bar>
+                        <template if:false={isLoad}>
+                                <componentes-spinner></componentes-spinner>
+                        </template>
                         <tempalte if:true={navigationItems.Experiencia.visible}>
                                 <componentes-experiencia onload={setStatusLoad}></componentes-experiencia>
                         </tempalte>
